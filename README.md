@@ -12,7 +12,7 @@ I'll try to add/change things over Time.
 Short Introduction : 
 
 - it is still a Prototype
-- alot of the Code isnt commented(tryin to this)
+- alot of the Code isnt commented(tryin to do this)
 
 - ok, like the name said based on a  3D Grid
 - each Grid Node stores some Information
