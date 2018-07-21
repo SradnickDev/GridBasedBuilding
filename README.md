@@ -34,5 +34,4 @@ Have Fun =D
 
 https://youtu.be/KEdmQQ63Uto
 
-[![Fortnite Building Remake in Unity](https://img.youtube.com/vi/KEdmQQ63Uto/0.jpg)](https://www.youtube.com/watch?v=KEdmQQ63Uto "Fortnite Building Remake in Unity"
 
