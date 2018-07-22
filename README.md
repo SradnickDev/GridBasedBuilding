@@ -3,9 +3,9 @@ Fortnite Building Remake
 
 
 This  should be a remake of the Fortnite Building System.
-It is still Work In Progress but Im not sure if i ever have the Time to finish it.
+This Project is discontinued.
 
-I'll try to add/change things over Time.
+
 
 
 
@@ -23,7 +23,7 @@ Short Introduction :
 - simple Terrain/Ground Collision Check
 
 
-I didnt find a good way to solve the tons of conditions wich are needed for the Wall,Ramp,Floor Placement.
+I didnt find a good way to solve the tons of conditios wich are needed for the Wall,Ramp,Floor Placement.
 Also for the chain destruction i thought of saving all required Nighbours wich was the wrong way of doing it.
 
 Take a look in the GridNode.cs for more Information :D have fun to see some horror code
@@ -33,5 +33,6 @@ About the GridNode Recognition , it uses cardinal points mixing Y and Z Axis Rot
 Have Fun =D
 
 https://youtu.be/KEdmQQ63Uto
+dm me on Discord if you have Questions : unbalance#4499
 
 
