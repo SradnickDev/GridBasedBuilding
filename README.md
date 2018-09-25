@@ -33,6 +33,5 @@ About the GridNode Recognition , it uses cardinal points mixing Y and Z Axis Rot
 Have Fun =D
 
 https://youtu.be/KEdmQQ63Uto
-dm me on Discord if you have Questions : unbalance#4499
 
 
