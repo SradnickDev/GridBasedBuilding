@@ -87,7 +87,9 @@ public class BuildHandler : MonoBehaviour
         Initialize();
         m_shadowGizmo = new GameObject("GizmoShadow").transform;
         ChangeNode += OnGridNodeChanged;
+        Cursor.lockState = CursorLockMode.Locked;
     }
+
     void Initialize()
     {
         for (int i = 0; i < buildableObject.Length; i++)
@@ -159,6 +161,8 @@ public class BuildHandler : MonoBehaviour
                 OnChangeBlock(buildableObject[i].gridObject, i);
             }
         }
+        if (Input.GetKey(KeyCode.End))  //Pressing 'End' key will disable Cursor Lock
+            Cursor.lockState = CursorLockMode.None;
     }
 
     void OnGizmoChange()
@@ -216,3 +220,4 @@ public class BuildHandler : MonoBehaviour
     }
 
 }
+
