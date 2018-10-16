@@ -12,7 +12,6 @@ public abstract class GridObject : MonoBehaviour
     public GameObject BlockGizmo;
     public Gizmo Gizmo { get; set; }
 
-
     [Header("Scriptable Grid")]
     public Grid grid;
 
@@ -26,8 +25,8 @@ public abstract class GridObject : MonoBehaviour
     float m_lastRotation;
     float m_currentRotation;
     #endregion PrivateMembers
-    #region Events
 
+    #region Events
     #endregion Events
 
 
@@ -41,11 +40,13 @@ public abstract class GridObject : MonoBehaviour
         if (node == null) return;
         Quaternion rot = Quaternion.Euler(rotation);
         LastCreatedBlock = Instantiate(BlockObject, node.center, rot);
-        LastCreatedBlock.name = UnityEngine.Random.Range(-1000, 1000).ToString();
+        LastCreatedBlock.name = CreateRandomName(8);
         node.block = LastCreatedBlock;
         node.blockHealth = LastCreatedBlock.GetComponent<BlockHealth>();
         node.blockHealth.SetGridBlock(node);
     }
+
+
     public abstract bool Validate(GridNode gridNode, Transform gizmo);
     /// <summary>Rotate Gizmo with</summary><param name="camera"></param>
     bool m_autoRotate = true;
@@ -133,4 +134,14 @@ public abstract class GridObject : MonoBehaviour
         Gizmo.gameObject.SetActive(value);
     }
     public abstract BlockType GetBlockType();
+
+    private string CreateRandomName(int numChars)
+    {
+      var retString = String.Format("{0}", (char)UnityEngine.Random.Range(65, 92));  //begin with a capital letter
+      do
+        retString = String.Format("{0}{1}", retString, (char)UnityEngine.Random.Range(97, 122));
+      while (numChars-- > 0);
+
+      return retString;
+    }
 }
